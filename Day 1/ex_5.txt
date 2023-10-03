@@ -1,0 +1,1 @@
+Uncaught SyntaxError: Unexpected identifier 'Code' (at ?editor_console=true:111:8)
