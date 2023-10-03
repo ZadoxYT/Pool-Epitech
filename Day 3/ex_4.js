@@ -8,7 +8,7 @@ function calculator() {
 	if (action === "add"){
   	result = addition(a,b)
   } else if (action ==="sub") {	
- 		result = subtraction(a,b)
+ 	result = subtraction(a,b)
   }
   return result
 }
