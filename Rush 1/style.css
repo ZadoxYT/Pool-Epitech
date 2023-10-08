@@ -1,3 +1,22 @@
+html {
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {font-size: 1rem;}
+h2 {font-size: 0.9rem;}
+h3 {font-size: 0.8rem;}
+p {font-size: 0.7rem;}
+img {max-width: 80%;}
+
+@media (min-width: 1200px) {
+    h1 {font-size: 2rem;}
+    h2 {font-size: 1.5rem;}
+    h3 {font-size: 1.2rem;}
+    p {font-size: 1rem;}
+    img {max-width: 100%;}
+}
+
 .checkered-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
                       linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
@@ -25,8 +44,8 @@
 .menu6 { grid-area: 1 / 7 / 2 / 8; }
 
 #text-alone{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
                       linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
@@ -40,7 +59,17 @@
     grid-row-gap: 0px;
 }
 
-.div1 { grid-area: 1 / 1 / 3 / 2; }
+#griditude-1 h1 {
+    color: orange !important;
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 2; 
+    align-self: center;
+    border: 3px solid lightgray; 
+    margin-left: 60px;
+    margin-right: 190px;
+    padding: 15px;
+}
 .div2 { grid-area: 1 / 2 / 2 / 3; }
 .div3 { grid-area: 2 / 2 / 3 / 3; }
 .div4 { grid-area: 1 / 3 / 2 / 4; }
@@ -58,11 +87,51 @@
 }
 
 #flexitude-2{
-    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+
 }
 
-.img_end {
-    float: right;
-    padding-right: 20px;
+hr {
+    height: 2px;
+    background-color: lightgray !important;
+    border: none !important;
+}
+
+iframe {
+    padding-top: 40px;
     padding-bottom: 40px;
 }
+
+.floote {
+    float:left;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+  }
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-start;
+    order: 0;
+    padding: 5px;
+  }
