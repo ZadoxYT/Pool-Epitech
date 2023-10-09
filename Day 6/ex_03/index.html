@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Spy agent instagram post</title>
+</head>
+<body>
+
+<div class="container">
+    <span class="card" data-tilt>
+        <div class="header">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkempinsky.pl%2Fwp-content%2Fuploads%2F2013%2F08%2Fjames_bond_craig1-66510_186x186.jpg&f=1&nofb=1" height="30" width="30" alt="James bond profile picture">
+            <span id="nickname">jamesbondofficial</span>
+        </div>
+        <img id="post" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faliceasmartialarts.com%2Fwp-content%2Fuploads%2F2017%2F04%2Fdefault-image.jpg&f=1&nofb=1" alt="No image background">
+        <div class="description">
+            <div id="out" class="out">Content is loading ...</div>
+            <div>#jamesbond #astonmartin #db5</div>
+        </div>
+    </span>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+<script type="text/javascript">
+    function shareThatBeauty(json) {
+        if (typeof json !== 'object' || !json.car) {
+            return console.warn('Expected a json with a car property')
+        }
+
+        const car = json.car
+        $("#post").attr("src", "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-i1EU1KIUIQY%2FVWL_uhZl31I%2FAAAAAAAAB34%2F1x643TrVs_I%2Fs1600%2FGoldfinger%252B0-36-16.jpg&f=1&nofb=1");
+        $("#out").text("Here is my " + car.color + " " + car.brand + " " + car.model + " parked in the Furka Pass, Switzerland. A very nice and powerfull car (" + car.power + ") from the sixties.");
+        $("#nickname").text(json.firstName.toLowerCase() + json.lastName.toLowerCase() + "official");
+    }
+
+    $('.js-tilt').tilt({
+        glare: true,
+        maxGlare: .8
+    })
+</script>
+<script src="ex_03.js" type="text/javascript"></script>
+</body>
+</html>
