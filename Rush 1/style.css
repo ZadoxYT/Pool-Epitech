@@ -6,7 +6,9 @@ html {
 h1 {font-size: 1rem;}
 h2 {font-size: 0.9rem;}
 h3 {font-size: 0.8rem;}
-p {font-size: 0.7rem;}
+p {font-size: 0.7rem;
+    font-family: 'Oswald', sans-serif;
+color: #666666;}
 img {max-width: 80%;}
 h1 { font-family: 'Droid Sans', sans-serif}
 
@@ -28,6 +30,14 @@ h1 { font-family: 'Droid Sans', sans-serif}
     grid-row-gap: 0px; 
 }
 
+dt {
+    padding-bottom: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    color: #c0bebe;
+    font-size: small;
+    font-weight: bold;
+}
+
 .menu1 { 
     grid-area: 1 / 1 / 2 / 3; 
     align-self: center;
@@ -38,6 +48,47 @@ h1 { font-family: 'Droid Sans', sans-serif}
 .menu4 { grid-area: 1 / 5 / 2 / 6; }
 .menu5 { grid-area: 1 / 6 / 2 / 7; }
 .menu6 { grid-area: 1 / 7 / 2 / 8; }
+
+#H{
+    border-bottom: 6px solid #F76900; 
+    margin-right: 8rem;
+    padding-bottom: 10px;
+    width: 60%;
+    font-family: 'Oswald';
+    color: rgb(168, 167, 167);
+}
+#R{
+    border-bottom: 6px solid #FCD04A;
+    margin-right: 8rem;
+    padding-bottom: 10px;
+    width: 60%;
+    font-family: 'Oswald';
+    color: rgb(168, 167, 167);
+}
+#S{
+    border-bottom: 6px solid rgba(112, 238, 118, 0.795);
+    margin-right: 8rem;
+    padding-bottom: 10px;
+    width: 60%;
+    font-family: 'Oswald';
+    color: rgb(168, 167, 167);
+}
+#A{
+    border-bottom: 6px solid rgb(106, 171, 255);
+    margin-right: 8rem;
+    padding-bottom: 10px;
+    width: 60%;
+    font-family: 'Oswald';
+    color: rgb(168, 167, 167);
+}
+#P{
+    border-bottom: 6px solid rgb(224, 71, 224);
+    margin-right: 8rem;
+    padding-bottom: 10px;
+    width: 60%;
+    font-family: 'Oswald';
+    color: rgb(168, 167, 167);
+}
 
 #text-alone{
     padding-top: 60px;
@@ -59,7 +110,7 @@ h1 { font-family: 'Droid Sans', sans-serif}
 }
 
 #griditude-1 h1 {
-    color: orange !important;
+    color: #E98632 !important;
     padding: 0px;
     margin: 0px;
     margin-top: 20px;
@@ -100,6 +151,14 @@ h1 { font-family: 'Droid Sans', sans-serif}
     color: lightgray;
     font-style: italic;
     font-size: medium;
+}
+
+.com {
+    font-family: 'Droid Serif', serif;
+    color: lightgray;
+    font-style: italic;
+    font-size: medium;
+    text-decoration: underline;
 }
 
 .ecriture {
@@ -157,11 +216,12 @@ h1 { font-family: 'Droid Sans', sans-serif}
 
 .gras {
     font-weight: bold;
+    color: #7a7a7a;
 }
 
 hr {
     height: 2px;
-    background-color: lightgray !important;
+    background-color: #F3F3F3 !important;
     border: none !important;
 }
 
@@ -197,3 +257,8 @@ iframe {
     order: 0;
     padding: 5px;
   }
+
+#terminado {
+    color: #AEA493;
+    font-size: small;
+}
