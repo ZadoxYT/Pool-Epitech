@@ -1,0 +1,40 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: white;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    display: flex;
+}
+
+button {
+    margin: auto;
+}
+
+#square {
+    background: lightblue;
+    margin: auto;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (orientation:landscape) {
+    #square {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+@media screen and (orientation:portrait) {
+    #square {
+        width: 50vw;
+        height: 50vw;
+    }
+}

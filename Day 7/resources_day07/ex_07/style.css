@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    background-color: #111;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+}
+
+h1 {
+    background: url(https://media2.giphy.com/media/enTHJKJ7vNpW9ao9kh/giphy.gif?cid=ecf05e47lint657m8zjh4bm1az6xgoqlr8besf38oop2ugmb&rid=giphy.gif&ct=g) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-size-adjust: revert;
+    line-height: .75;
+    margin: 10px 0;
+}
+/* styling my button */
+
+.white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: #122;
+    border-radius: 3px;
+    color: #FFF;
+    transition: .35s ease-in-out;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: "Montserrat", serif;
+}
+
+.white-mode:hover {
+    background-color: #FFF;
+    color: #122;
+}

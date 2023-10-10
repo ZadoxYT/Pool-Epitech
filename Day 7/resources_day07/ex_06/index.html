@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" title="no title">
+</head>
+<body>
+<p id="speech-bubble">Hello !</p>
+<div class="container">
+  <svg id="robot" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+    <path d="m226.143 174.795v72.159 6.275 150h60v-150-6.275-72.159z" fill="#06465e"/>
+    <path d="m256 174.795v228.434h30.143v-150-6.275-72.159z" fill="#022b3a"/>
+    <path d="m403.037 202.476v43.805h-39.967v25.368h39.967 24.949.419v-69.173z" fill="#06465e"/>
+    <path d="m434.377 151.817-6.821 15.752-2.619 6.049c2.934 2.568 4.799 6.33 4.799 10.526 0 7.72-6.28 14-14 14s-14-6.281-14-14c0-4.196 1.865-7.958 4.799-10.526l-2.619-6.049-6.821-15.752c-11.162 6.462-18.693 18.527-18.693 32.326 0 20.586 16.748 37.334 37.334 37.334s37.334-16.748 37.334-37.334c0-13.798-7.531-25.864-18.693-32.326z" fill="#eaeaea"/>
+    <path d="m110.238 321.74v-43.805h39.968v-25.368h-39.968-24.948-.419v69.173z" fill="#06465e"/><g fill="#fff"><circle cx="97.54" cy="265.086" r="18.667"/>
+    <path d="m78.899 372.399 6.821-15.751 2.619-6.049c-2.934-2.568-4.799-6.33-4.799-10.526 0-7.72 6.28-14 14-14s14 6.281 14 14c0 4.196-1.865 7.958-4.799 10.526l2.619 6.049 6.821 15.751c11.162-6.462 18.693-18.527 18.693-32.326 0-20.586-16.748-37.334-37.334-37.334s-37.334 16.748-37.334 37.334c0 13.798 7.531 25.864 18.693 32.326z"/>
+    <path d="m336.143 192.881h-160c-16.569 0-30-13.431-30-30v-60c0-16.569 13.431-30 30-30h160c16.569 0 30 13.431 30 30v60c0 16.569-13.431 30-30 30z"/></g>
+    <path d="m336.143 72.881h-80.143v120h80.143c16.568 0 30-13.431 30-30v-60c0-16.568-13.431-30-30-30z" fill="#eaeaea"/>
+    <path id="body-msg" d="m336.143 353.295h-160c-16.569 0-30-13.431-30-30v-70c0-16.569 13.431-30 30-30h160c16.569 0 30 13.431 30 30v70c0 16.569-13.431 30-30 30z" fill="#fff"/>
+    <path d="m333.748 429.119h-154.11c-12.672 0-22.945-10.273-22.945-22.945 0-12.672 10.273-22.945 22.945-22.945h154.11c12.672 0 22.945 10.273 22.945 22.945-.001 12.672-10.273 22.945-22.945 22.945z" fill="#fff"/>
+    <path d="m333.748 383.229h-77.748v45.89h77.748c12.672 0 22.945-10.273 22.945-22.945-.001-12.672-10.273-22.945-22.945-22.945z" fill="#eaeaea"/>
+    <circle class="eye-right-pupil" cx="306.143" cy="132.881" fill="#06465e" r="27.5"/>
+    <path class="eye-right-iris" d="m306.144 172.881c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.945 40-40 40zm0-55c-8.271 0-15 6.729-15 15s6.729 15 15 15 15-6.729 15-15-6.729-15-15-15z" fill="#2284ec"/>
+    <circle class="eye-left-pupil" cx="206.143" cy="132.881" fill="#06465e" r="27.5"/>
+    <path class="eye-left-iris" d="m206.144 172.881c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.945 40-40 40zm0-55c-8.271 0-15 6.729-15 15s6.729 15 15 15 15-6.729 15-15-6.729-15-15-15z" fill="#27ade5"/>
+    <polygon class="angry-eyes invisible" points="160,90 250,90 250,150" style="fill:white" />
+    <polygon class="angry-eyes invisible" points="260,90 360,90 260,150" style="fill:#eaeaea" />
+  </svg>
+  <div id="screen-text-container">
+    <p id="screen-text">Bip bip bip !</p>
+  </div>
+</div>
+<div class="form">
+  <input id="robot-input" type="text" name="text" autocomplete="off" required />
+  <label for="robot-input" class="label-name">
+    <span class="content-name">
+      Your Text
+    </span>
+ </label>
+</div>
+<script src="ex_06.js"></script>
+<script type="text/javascript">
+  function _0x1364(_0x4a1ede,_0x2016e3){const _0x2d220f=_0x2d22();return _0x1364=function(_0x13642c,_0x11ef27){_0x13642c=_0x13642c-0x7c;let _0x5c75d5=_0x2d220f[_0x13642c];return _0x5c75d5;},_0x1364(_0x4a1ede,_0x2016e3);}const _0x58786b=_0x1364;(function(_0x940138,_0x3554f7){const _0x29b910=_0x1364,_0x5d5fab=_0x940138();while(!![]){try{const _0x3a126f=-parseInt(_0x29b910(0x7d))/0x1+-parseInt(_0x29b910(0x86))/0x2*(parseInt(_0x29b910(0x7c))/0x3)+-parseInt(_0x29b910(0x7f))/0x4*(parseInt(_0x29b910(0x80))/0x5)+-parseInt(_0x29b910(0x88))/0x6*(parseInt(_0x29b910(0x81))/0x7)+-parseInt(_0x29b910(0x8c))/0x8*(parseInt(_0x29b910(0x82))/0x9)+-parseInt(_0x29b910(0x90))/0xa+-parseInt(_0x29b910(0x89))/0xb*(-parseInt(_0x29b910(0x87))/0xc);if(_0x3a126f===_0x3554f7)break;else _0x5d5fab['push'](_0x5d5fab['shift']());}catch(_0x2bffc6){_0x5d5fab['push'](_0x5d5fab['shift']());}}}(_0x2d22,0xc80c1));function _0x2d22(){const _0x3a0380=['992150RXmmBs','7WzKUyd','26397NMFJVl','speech-bubble','querySelectorAll','observe','27002yBWsSS','98940gRpGSj','6842058ieYRnw','10010QrHBuw','getElementById','#robot\x20polygon','3368iBMnQK','add','invisible','Ouch,\x20that\x20hurts!','9680670KDPLMG','261XDCKvT','578327lLYcCi','classList','32pQlkAq'];_0x2d22=function(){return _0x3a0380;};return _0x2d22();}const target=document[_0x58786b(0x8a)](_0x58786b(0x83)),observer=new MutationObserver(function(_0x3190ba){_0x3190ba['forEach'](function(_0x5ac5d1){const _0x43e483=_0x1364;target['innerText']===_0x43e483(0x8f)?document[_0x43e483(0x84)]('#robot\x20polygon')['forEach'](_0x31e4e6=>_0x31e4e6[_0x43e483(0x7e)]['remove'](_0x43e483(0x8e))):document['querySelectorAll'](_0x43e483(0x8b))['forEach'](_0x59cd35=>_0x59cd35['classList'][_0x43e483(0x8d)](_0x43e483(0x8e)));});}),config={'attributes':!![],'childList':!![],'characterData':!![]};observer[_0x58786b(0x85)](target,config);
+</script>
+</body>
+</html>

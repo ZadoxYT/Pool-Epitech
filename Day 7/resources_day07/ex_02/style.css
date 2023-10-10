@@ -1,0 +1,53 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --action-bar-height: 50px;
+}
+
+#actions {
+    height: var(--action-bar-height);
+    display: flex;
+}
+
+.container{
+    background: orange;
+    height: calc(100% - var(--action-bar-height));
+    width: 100%;
+    padding:0;
+    display: flex;
+}
+
+button {
+    margin: auto;
+}
+
+#circle {
+    background-color: red;
+    background-image: url("https://github.com/baris-f/pool-images-storage/blob/main/misc/arrow-up.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    border-radius: 50%;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (orientation:landscape) {
+    #circle {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+@media screen and (orientation:portrait) {
+    #circle {
+        width: 50vw;
+        height: 50vw;
+    }
+}
