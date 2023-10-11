@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: auto;
+}
