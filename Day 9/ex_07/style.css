@@ -1,0 +1,107 @@
+html {
+    --ratio: 30;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(255,236,215);
+    display: flex;
+}
+
+#frames {
+    display: block;
+    position: relative;
+    width: calc(20px * var(--ratio));
+    height: calc(20px * var(--ratio));
+    margin: auto;
+}
+
+.foreground {
+    position: absolute;
+    display: block;
+}
+
+#guardrail {
+    height: 50%;
+    right: -10%;
+    bottom: -15%;
+    pointer-events: none;
+}
+
+.frame {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+}
+
+.frame::after {
+    content: "";
+    background-image: url(assets/rope.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: calc(1px * var(--ratio));
+    height: calc(calc(1px * var(--ratio)) * 25);
+    top: calc(calc(1px * var(--ratio)) * -25);
+    left: calc(50% - calc(.5px * var(--ratio)));
+    position: absolute;
+    display: block;
+    pointer-events: none
+}
+
+.shadow::before {
+    content: "";
+    background-image: url(assets/shadow.png);
+    width: 900%;
+    height: 900%;
+    display: block;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.frame:nth-child(1) {
+    background-image: url("assets/frame.png");
+    left: calc(12px * var(--ratio));
+    top: calc(12px * var(--ratio));
+    width: calc(4px * var(--ratio));
+    height: calc(6px * var(--ratio));
+}
+.frame:nth-child(2) {
+    background-image: url("assets/frame.png");
+    left: calc(4px * var(--ratio));
+    top: calc(5px * var(--ratio));
+    width: calc(11px * var(--ratio));
+    height: calc(9px * var(--ratio));
+}
+
+.frame:nth-child(3) {
+    background-image: url("assets/frame.png");
+    left: calc(2px * var(--ratio));
+    top: calc(11px * var(--ratio));
+    width: calc(7px * var(--ratio));
+    height: calc(5px * var(--ratio));
+}
+.frame:nth-child(4) {
+    background-image: url("assets/frame.png");
+    left: calc(11px * var(--ratio));
+    top: calc(2px * var(--ratio));
+    width: calc(7px * var(--ratio));
+    height: calc(5px * var(--ratio));
+}
+
+.canvas-container {
+    position: relative;
+    display: block;
+    margin: calc(.5px * var(--ratio));
+    width: calc(100% - calc(1px * var(--ratio)));
+    height: calc(100% - calc(1px * var(--ratio)));
+    background-color: whitesmoke;
+}

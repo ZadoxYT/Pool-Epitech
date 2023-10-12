@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="grid-container">
+  <div class="async-image loading" id="item1"></div>
+  <div class="async-image loading" id="item2"></div>
+  <div class="async-image loading" id="item3"></div>
+  <div class="async-image loading" id="item4"></div>
+</div>
+</body>
+<script>
+  //Wait 5sec and then call the loadImages function
+  setTimeout(loadImages, 5000);
+
+  //Used to load images
+  function loadImages() {
+      const images = ["https://cdn.pocket-lint.com/r/s/660x/assets/images/140427-apps-news-the-best-stupidest-and-most-famous-internet-memes-around-image22-gjp0v91lpa-jpg.webp",
+      "https://i.redd.it/bptzx7ur4uj11.jpg",
+      "https://c.tenor.com/QWdPngpHxZ8AAAAd/family-guy-css.gif",
+      "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8dfc9ac6-7677-4770-9c98-5dd1eee56e6f/css-important-meme.png"]
+
+      for (let i = 0; i < images.length; i++) {
+          document.getElementById("item" + (i + 1)).style.backgroundImage = "url('" + images[i] + "')";
+          document.getElementById("item" + (i + 1)).classList.remove("loading")
+          document.getElementById("item" + (i + 1)).classList.add("loaded")
+      }
+  }
+</script>
+</html>
