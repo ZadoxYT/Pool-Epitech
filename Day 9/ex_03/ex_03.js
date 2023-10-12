@@ -11,3 +11,34 @@ const imagesData  = [['https://media.giphy.com/media/3oD3Yrwt1gRDhiQZ5S/giphy.gi
     ['https://media.giphy.com/media/26ACqq4q3I8UDF3IA/giphy.gif', 'Switching points']]
 
 generateCards(imagesData)
+
+const container = document.querySelector('#cards-list');
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.classList.add('hover-effect');
+});
+
+container.addEventListener('wheel', (event) => {
+    if (event.deltaY !== 0) {
+      event.preventDefault();
+      container.scrollLeft += event.deltaY;
+    }
+  });
+
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.remove('hover-effect'); 
+      card.classList.add('zoomed');
+    });
+  });
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      cards.forEach(card => {
+        card.classList.remove('zoomed');
+        card.classList.add('hover-effect');
+      });
+    }
+});

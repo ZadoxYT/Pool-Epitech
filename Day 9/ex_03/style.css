@@ -22,6 +22,11 @@ body {
     cursor: pointer;
 }
 
+[class$=hover-effect]:hover {
+    transition: transform 0.3s ease;
+    transform: scale(0.9);
+}
+
 .card .card_image {
     width: inherit;
     height: inherit;
@@ -44,4 +49,11 @@ body {
     margin-top: -80px;
     height: 40px;
     color: white;
+}
+
+.zoomed {
+    transition: transform 0.3s ease;
+    transform: scale(1.5);
+    z-index: 1;
+    position: relative;
 }
