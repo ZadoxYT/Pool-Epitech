@@ -9,10 +9,13 @@ body {
 #character {
     width: 256px;
     height: 256px;
-
     bottom: 0;
     position: absolute;
-
+    animation: animate-sprite 600ms steps(6) infinite;
     background-image: url('walking.png');
 }
 
+@keyframes animate-sprite {
+    0% { background-position: 0 0; } 
+    100% { background-position: -1536px 0; }
+}
