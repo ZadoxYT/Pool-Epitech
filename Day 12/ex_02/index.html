@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="ex_01bis.js">
+    <link rel="script" href="ex_01ter.js">
+</head>
+<body>
+<div class="main-container">
+    <div class="task-container">
+        <h1>Task List</h1>
+        <div class="list-container">
+            <ul>
+                <li>
+                    Task 1
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </li>
+                <li>
+                    Task 2
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </li>
+                <li>
+                    Task 3
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form>
+    <div class="result-container">
+        <label for="results-textarea"></label>
+        <input type="text" id="results-textarea" name="textarea" placeholder="New Task"/>
+    </div>
+    <input type="submit" class="add-button" value="Add Task">
+    </form>
+</div>
+</body>
+</html>
