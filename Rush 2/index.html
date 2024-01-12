@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a class="hide" href="#">Home</a>
+            <a class="hide" href="#">Shop</a>
+            <a class="hide" href="#">Magazine</a>
+        </nav>
+        <div class="user-actions">
+            <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            <div id="mySidenav" class="sidenav">
+                <img src="src/logo.png" alt="Logo">
+                <a id="closeBtn" href="#" class="close">&times;</a>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Magazine</a></li>
+                </ul>
+              </div>
+              
+              <a href="#" id="openBtn">
+                <span class="burger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </a>
+            </div>
+            <a class="hide" href="#">Login</a>
+        </div>
+    </header> 
+    <div class="search-bar-container">
+        <div class="search-icon">
+            <img src="src/loupe.svg" alt="Loupe">
+        </div>
+        <input type="text" placeholder="Rechercher..." class="search-input" value="" onkeyup="search()">
+        <div class="select-container">
+            <select class="search-select">
+                <option>Best Match</option>
+                <option>No more option</option>
+            </select>
+            <!-- De la grosse musique -->
+            <div class="select-arrow">
+                <img src="src/arrowdown.svg" alt="Arrow">
+            </div>
+        </div>
+    </div>         
+    <div class="grid-container">
+        <!-- Filtres -->
+        <div class="grid-item filters" id="filtre">
+            <ul id="menu-accordeon">
+                <li><a href="#">Pays&#8595;</a>
+                   <ul>
+                      <li>En cours de maintenance</li>
+                   </ul>
+                </li>
+                 <li><a href="#">Type de lait&#8595;</a>
+                   <ul>
+                      <li>En cours de maintenance</li>
+                   </ul>
+                </li>
+             </ul>
+            <input type="range" name="" id="">
+        </div>
+        <!-- Article 1 -->
+        <div id="le pule" class="filterItem serbe ane vache"></div>
+        <div class="grid-item">
+            <img src="src/frm1.png" alt="Article 1">
+            <h3>Le Pule</h3>
+            <small>OH MY BALKAN!</small>
+            <div class="rating">★★★★☆</div>
+            <span class="price">2,600$</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+        
+        <!-- Article 2 -->
+        <div class="grid-item">
+            <img src="src/frm2.png" alt="Article 2">
+            <h3 id="Le Moose Cheese">Le Moose Cheese</h3>
+            <small>SWEDEN'S FAVORITE</small>
+            <div class="rating">★★★★☆</div>
+            <span class="price">$590</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+
+        <!-- Article 3 -->
+        <div class="grid-item">
+            <img src="src/frm3.png" alt="Article 3">
+            <h3 id="Le White Stilton Gold">Le White Stilton Gold</h3>
+            <small>ENGLISH TOUCH</small>
+            <div class="rating">★★★★★</div>
+            <span class="price">$950</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+        <!-- Bah, bonjour toi, pourquoi tu lis ça ? Nan mais oh, tu rentres dans l'intimité des gens là -->
+                <!-- Article 4 -->
+        <div class="grid-item">
+            <img src="src/frm4.png" alt="Article 4">
+            <h3 id="Le Wyke Farms Cheddar">Le Wyke Farms Cheddar</h3>
+            <small>CE CHEDDAR A DU TALENT</small>
+            <div class="rating">★★★★☆</div>
+            <span class="price">$90</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+
+                <!-- Article 5 -->
+        <div class="grid-item">
+            <img src="src/frm5.png" alt="Article 5">
+            <h3 id="Le Bitto Storico">Le Bitto Storico</h3>
+            <small>FROM LES MONTAGNES</small>
+            <div class="rating">★★★★☆</div>
+            <span class="price">$890</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+
+                <!-- Article 6 -->
+        <div class="grid-item">
+            <img src="src/frm6.png" alt="Article 6">
+            <h3 id="Le Rogue River Blue">Le Rogue River Blue</h3>
+            <small>OREGON NATIVE</small>
+            <div class="rating">★★★★☆</div>
+            <span class="price">$120</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+
+                <!-- Article 7 -->
+        <div class="grid-item">
+            <img src="src/frm7.png" alt="Article 7">
+            <h3 id="Le Caciocavallo Podolico">Le Caciocavallo Podolico</h3>
+            <small>KIEV X VENISE</small>
+            <div class="rating">★★★★☆</div>
+            <span class="price">$420</span>
+            <div class="cart-icon">
+                <button class="btn_solide"> <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+        </div>
+    </div>
+	  <footer class="pagination">
+			<a class="active" href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+			<a href="#">7</a>
+			<a href="#">8</a>
+			<a href="#">9</a>
+			<a href="#">10</a>
+			<a href="#">&rarr;</a>
+	  </footer>
+  </body>
+</div>
+</html>
