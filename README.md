@@ -1,4 +1,4 @@
-# Pool | EDS
+# Pool DIGI1 | EDS
 
 EN 🇺🇸/🇬🇧 :
 
